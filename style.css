@@ -197,7 +197,7 @@ body {
     padding: 5px;
     margin-top: 30px;
    align-self: center;
-    width: 95%;
+    width: 100%;
     text-align: right;
     background-color: #ddd;
   }
@@ -220,6 +220,13 @@ body {
   }
   
   /* ======== Media query ========*/
+
+  [class*="main"] {
+    width: 100%;
+    justify-content: center;
+  }
+
+
   @media (min-width: 550px) {
     #features .card .icon {
       display: block;
