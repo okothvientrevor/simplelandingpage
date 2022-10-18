@@ -31,11 +31,31 @@ body {
   }
   
   .logo img {
-    width: 50%;
+    width: 25%;
   }
   
+  .logo p{
+    margin-top:20px;
+    font-size: 30px;
+  }
+
+  .side-nav{
+    margin-top: auto;
+    margin-right: auto;
+    width: 30px;
+    display: block;
+
+  }
+
+  .side-nav div{
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 25px;
+  }
+
   #nav-bar {
-    display: flex;
+    display: none;
     flex-grow: 1;
     min-height: 80px;
     align-items: center;
@@ -57,13 +77,14 @@ body {
     text-decoration: none;
   }
   
+  
   /* ======== Form ========*/
   .form {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
+    margin-top:  250px;
   }
   
   .form form {
@@ -210,13 +231,25 @@ body {
   }
   
   @media (min-width: 600px) {
+    .side-nav{
+      display: none;
+    }
+
+
+    .form{
+      margin-top: 100px;
+    }
     #header {
       flex-direction: row;
       left: 5%;
       right: 5%;
     }
   
-    #nav-bar ul {
+#nav-bar{
+  display: flex;
+}
+
+   #nav-bar ul {
       width: 100%;
       display: flex;
       justify-content: flex-end;
